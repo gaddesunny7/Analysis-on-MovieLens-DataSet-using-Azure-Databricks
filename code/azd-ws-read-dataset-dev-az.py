@@ -16,10 +16,10 @@ from pyspark.sql.functions import rank,min
 # COMMAND ----------
 
 #File Location and Type for movies,link,ratings
-movies = '/mnt/sacondatalakedevaz/movies.csv'
-link = '/mnt/sacondatalakedevaz/links.csv'
-tags = '/mnt/sacondatalakedevaz/tags.csv'
-ratings = '/mnt/sacondatalakedevaz/ratings.csv'
+movies = '/mnt/<storage-container-name>/movies.csv'
+link = '/mnt/<storage-container-name>/links.csv'
+tags = '/mnt/<storage-container-name>/tags.csv'
+ratings = '/mnt/<storage-container-name>/ratings.csv'
 file_type = 'csv'
 
 
