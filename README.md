@@ -9,6 +9,10 @@ The aim of this project, is to  Extract the data from the Azure Data Lake Storag
 ## Architecture Diagram
 ![](img/architecture_2.png)
 
+## Data Pipeline
+This pipeline is used to extract the zip folder and load all the csv files in the Data Lake Storage
+![](img/unziploadgen2.png)
+
 ## Dataset
 - MovieLens Dataset ( https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset )
 - The Movielens data zip file is extracted to get the CSV files out of it in two ways: the Databricks local file system(DFS) and the Azure data factory(ADF) copy pipeline
