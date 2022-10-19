@@ -8,7 +8,7 @@
 # COMMAND ----------
 
 #Test to check the files in the container through the Data Lake Storage Account
-dbutils.fs.ls("abfss://sacondatalakedevaz@sadevdatalakeaz.dfs.core.windows.net/")
+dbutils.fs.ls("abfss://<storage-container-name>@<storage-account-name>.dfs.core.windows.net/")
 
 # COMMAND ----------
 
@@ -18,7 +18,7 @@ dbutils.fs.mounts()
 # COMMAND ----------
 
 #copy the file using the DBFS
-dbutils.fs.cp("dbfs:/mnt/sacondatalakedevaz/ml_latest_small.zip","file:/tmp/ml_latest_small.zip")
+dbutils.fs.cp("dbfs:/mnt/<storage-container-name>/ml_latest_small.zip","file:/tmp/ml_latest_small.zip")
 
 # COMMAND ----------
 
@@ -41,10 +41,10 @@ dbutils.fs.ls("file:/tmp/ml-latest-small/")
 
 # COMMAND ----------
 
-dbutils.fs.cp("file:/tmp/ml-latest-small/movies.csv","abfss://sacondatalakedevaz@sadevdatalakeaz.dfs.core.windows.net/movies.csv")
-dbutils.fs.cp("file:/tmp/ml-latest-small/tags.csv","abfss://sacondatalakedevaz@sadevdatalakeaz.dfs.core.windows.net/tags.csv")
-dbutils.fs.cp("file:/tmp/ml-latest-small/links.csv","abfss://sacondatalakedevaz@sadevdatalakeaz.dfs.core.windows.net/links.csv")
-dbutils.fs.cp("file:/tmp/ml-latest-small/ratings.csv","abfss://sacondatalakedevaz@sadevdatalakeaz.dfs.core.windows.net/ratings.csv")
+dbutils.fs.cp("file:/tmp/ml-latest-small/movies.csv","abfss://<storage-container-name>@<storage-account-name>.dfs.core.windows.net/movies.csv")
+dbutils.fs.cp("file:/tmp/ml-latest-small/tags.csv","abfss://<storage-container-name>@<storage-account-name>.dfs.core.windows.net/tags.csv")
+dbutils.fs.cp("file:/tmp/ml-latest-small/links.csv","abfss://<storage-container-name>@<storage-account-name>.dfs.core.windows.net/links.csv")
+dbutils.fs.cp("file:/tmp/ml-latest-small/ratings.csv","abfss://<storage-container-name>@<storage-account-name>.dfs.core.windows.net/ratings.csv")
 
 # COMMAND ----------
 
@@ -52,11 +52,11 @@ dbutils.fs.cp("file:/tmp/ml-latest-small/ratings.csv","abfss://sacondatalakedeva
 
 # COMMAND ----------
 
-# MAGIC %fs ls abfss://sacondatalakedevaz@sadevdatalakeaz.dfs.core.windows.net/
+# MAGIC %fs ls abfss://<storage-container-name>@<storage-account-name>.dfs.core.windows.net/
 
 # COMMAND ----------
 
-# MAGIC %fs ls abfss://sacondatalakedevaz@sadevdatalakeaz.dfs.core.windows.net/
+# MAGIC %fs ls abfss://<storage-container-name>@<storage-account-name>.dfs.core.windows.net/
 
 # COMMAND ----------
 
