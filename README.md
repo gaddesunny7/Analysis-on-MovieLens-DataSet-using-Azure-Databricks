@@ -1,4 +1,4 @@
-# Analysis-on-MovieLens-DataSet-using-Azure-Databricks
+# Analysis-on-MovieLens-Dataset-using-Azure-Databricks
 Analysis and Visualisation of MovieLens Dataset using Azure Databricks
 
 ## Description
